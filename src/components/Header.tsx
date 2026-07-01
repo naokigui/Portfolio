@@ -73,7 +73,7 @@ export default function Header({ onNavigate }: HeaderProps) {
                 Guilherme Hirayama
               </p>
               <p className="text-[10px] text-zinc-500 font-mono tracking-widest mt-0.5 uppercase">
-                FIAP WEB DESIGN STUDENT
+                Web Design
               </p>
             </div>
           </div>
