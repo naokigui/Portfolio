@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+  --font-heading: "Inter", sans-serif;
+  
+  --color-brand-cyan: #ffffff;
+  --color-brand-blue: #e5e5e5;
+  --color-brand-purple: #d4d4d4;
+  --color-brand-dark-950: #050505;
+  --color-brand-dark-900: #141414;
+  --color-brand-dark-800: #262626;
+  --color-brand-dark-700: #404040;
+}
+
+/* Custom Styles */
+@layer base {
+  body {
+    background-color: var(--color-brand-dark-950);
+    color: #e5e5e5;
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+}
+
+/* Custom glow animations - minimized for neatness */
+.glow-cyan {
+  box-shadow: none;
+}
+
+.glow-purple {
+  box-shadow: none;
+}
+
+.glow-blue {
+  box-shadow: none;
+}
+
+.text-glow-cyan {
+  text-shadow: none;
+}
+
+/* Scrollbar customized */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-brand-dark-950);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-dark-800);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-cyan);
+}
